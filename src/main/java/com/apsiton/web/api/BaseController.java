@@ -17,7 +17,7 @@ public class BaseController {
 	private String getHostName() {
 		if (null == HOSTNAME) {
 			try {
-				HOSTNAME = java.net.InetAddress.getLocalHost().getHostName();
+				
 				logger.info("Hostname of local machine: " + HOSTNAME);
 			} catch (Exception uhe) {
 				// handle exception
